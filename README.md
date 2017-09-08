@@ -68,3 +68,16 @@ Folder structure:
 	- 22. Custom Input Components
 	- 23. SPA: Routing
 	- 24. SPA: Backend
+
+
+## Reference Links
+
+Here is some very intersting reading on a few pattern aspects, good to keep in mind when developing big systems with Vue.JS:<br/>
+
+### Code Splitting Pattern
+
+[https://vuejsdevelopers.com/2017/07/08/vue-js-3-ways-code-splitting-webpack/](https://vuejsdevelopers.com/2017/07/08/vue-js-3-ways-code-splitting-webpack/)
+
+### VueX
+
+[https://vuex.vuejs.org/en/intro.html](https://vuex.vuejs.org/en/intro.html)
