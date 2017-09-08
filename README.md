@@ -74,10 +74,14 @@ Folder structure:
   - 4. Event Listeners (done)
     - [official documentation](https://vuejs.org/v2/guide/events.html)
     - use of v-on
-    - use of @<event-name>
+    - use of @[event-name]
     - use of v-on:keyup.enter 
     - elimination of document.querySelector 
-  - 5. Attributr and class binding
+  - 5. Attributr and class binding (on)
+    - [official documentation](https://vuejs.org/v2/guide/class-and-style.html)
+    - use of :class
+    - use of v-bind:[attribute]
+    - 
   - 6. The Need for Computed Properties
   - 7. Components 101
   - 8. Nesting components

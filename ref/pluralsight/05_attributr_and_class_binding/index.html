@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<style type="text/css">
+
+		.color-red { color : red; }
+		.color-blue { color : blue; }
+		
+
+	</style>
+
+	<div id="root">
+
+			<h1 :class="h1class">I am bount by class name</h1>
+
+			<button @click="toggleH1Color" v-text="toggleButtonText"></button>
+
+			<br><br>
+
+			<!-- both will work -->
+			<!-- <button :title="title" id="button">Hover Over me</button> -->
+			<button v-bind:title="title" id="button">Hover Over me, I am bount by attribute</button>
+
+	</div>
+
+	<script type="text/javascript" src="https://unpkg.com/vue@2.4.2/dist/vue.js"></script>
+
+	<script type="text/javascript">
+		
+		var app = new Vue({
+			el : '#root',
+			data : {
+				isLoading : false, 
+				h1class : 'color-red',
+				title : 'Now I am coming from js',
+				toggleButtonText : this.isLoading ? 'Loading, please wait...' : 'Toggle'
+			},
+			methods : {
+				toggleH1Color () {
+					this.h1class = this.h1class === 'color-red' ? 'color-blue' : 'color-red'; 
+				}
+			}
+		})
+
+	</script>
+
+</body>
+</html>
