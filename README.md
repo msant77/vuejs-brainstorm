@@ -63,6 +63,10 @@ Folder structure:
     - within devtools, a new action tab shows up: vue
     - on vuejs action tab one can have access to the whole two-way binding tree, changes are automatically reflected throughout the DOM
   - 3. Lists (on)
+    - use of v-for
+    - use of v-text 
+    - difference between v-text and {{ }}
+    - commit pre-mounted : how to give functionality without the property method Vue.mounted () {}
   - 4. Event Listeners
   - 5. Attributr and class binding
   - 6. The Need for Computed Properties
@@ -84,3 +88,7 @@ Folder structure:
   - 22. Custom Input Components
   - 23. SPA: Routing
   - 24. SPA: Backend
+
+## More Ref
+
+  - [Crash Course by Brad Traversy - 60 minutes](https://www.youtube.com/watch?v=z6hQqgvGI4Y)
