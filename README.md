@@ -14,6 +14,18 @@ git clone http://github.com/marcosantana77/vuejs-brainstorm
 
 ```
 
+In order to run the examples, you better use some sort of web server, choose as you must, recommendation goes for 
+
+```
+$ npm install -g http-server
+
+$ cd /work/folder/example
+
+$ http-server 
+
+```
+
+
 Folder structure:
 ```
 .
@@ -40,13 +52,17 @@ Folder structure:
 ## To Do
 
 - code-along Pluralsight VueJs Laracasts
-  - 01. Data Bindings (on)
+  - 01. Data Bindings (done)
     - v-model
     - new Vue({})
     - first load, non-minified 71k :))))
 
-  - 2. Devtools
-  - 3. Lists
+  - 2. Devtools (done)
+    - install [vue.js devtools chrome extension](https://github.com/vuejs/vue-devtools)
+    - after extension activation, a vue icon will appear at the upper right corner
+    - within devtools, a new action tab shows up: vue
+    - on vuejs action tab one can have access to the whole two-way binding tree, changes are automatically reflected throughout the DOM
+  - 3. Lists (on)
   - 4. Event Listeners
   - 5. Attributr and class binding
   - 6. The Need for Computed Properties
