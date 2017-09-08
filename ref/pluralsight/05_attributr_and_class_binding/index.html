@@ -9,6 +9,7 @@
 
 		.color-red { color : red; }
 		.color-blue { color : blue; }
+		.is-loading { background : yellow; }
 		
 
 	</style>
@@ -17,7 +18,7 @@
 
 			<h1 :class="h1class">I am bount by class name</h1>
 
-			<button @click="toggleH1Color" v-text="toggleButtonText"></button>
+			<button @click="toggleH1Color" :class="{'is-loading' : isLoading}" :disabled="isLoading" v-text="toggleButtonText"></button>
 
 			<br><br>
 
@@ -41,7 +42,11 @@
 			},
 			methods : {
 				toggleH1Color () {
-					this.h1class = this.h1class === 'color-red' ? 'color-blue' : 'color-red'; 
+					this.isLoading = true; 
+					setTimeout(() => {
+						this.h1class = this.h1class === 'color-red' ? 'color-blue' : 'color-red'; 
+						this.isLoading = false;
+					}, 2000);
 				}
 			}
 		})

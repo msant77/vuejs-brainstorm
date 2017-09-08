@@ -81,7 +81,7 @@ Folder structure:
     - [official documentation](https://vuejs.org/v2/guide/class-and-style.html)
     - use of :class
     - use of v-bind:[attribute]
-    - 
+    - the first commit introduces the limitation of using computed values at the literal Vue().data, changes won't be automatically reflected
   - 6. The Need for Computed Properties
   - 7. Components 101
   - 8. Nesting components
