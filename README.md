@@ -41,11 +41,11 @@ Folder structure:
 
 - code-along Pluralsight VueJs Laracasts
   - 01. Data Bindings (on)
-  	* v-model
-  	* new Vue({})
-  	* first load, non-minified 71k :))))
+		- v-model
+    - new Vue({})
+    - first load, non-minified 71k :))))
 
-	- 2. Devtools
+  - 2. Devtools
 	- 3. Lists
 	- 4. Event Listeners
 	- 5. Attributr and class binding
