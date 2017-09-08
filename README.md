@@ -29,10 +29,12 @@ $ http-server
 Folder structure:
 ```
 .
+├── LICENSE
 ├── README.md
 └── ref
     ├── pluralsight
-    │   └── 01_data_binding
+    │   ├── 01_data_binding
+    │   └── 03_lists
     └── todomvc
         ├── angularjs
         ├── jquery
