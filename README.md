@@ -35,7 +35,8 @@ Folder structure:
     ├── pluralsight
     │   ├── 01_data_binding
     │   ├── 03_lists
-    │   └── 04_event_listeners
+    │   ├── 04_event_listeners
+    │   └── 05_attributr_and_class_binding
     └── todomvc
         ├── angularjs
         ├── jquery
@@ -81,7 +82,7 @@ Folder structure:
     - [official documentation](https://vuejs.org/v2/guide/class-and-style.html)
     - use of :class
     - use of v-bind:[attribute]
-    - the first commit introduces the limitation of using computed values at the literal Vue().data, changes won't be automatically reflected
+    - the first commit introduces the limitation of using computed values at the literal Vue().data, changes won't be automatically reflected, situation is reproduced under [Issue 1](https://github.com/marcosantana77/vuejs-brainstorm/issues/1)
   - 6. The Need for Computed Properties
   - 7. Components 101
   - 8. Nesting components

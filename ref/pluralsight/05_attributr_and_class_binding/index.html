@@ -38,14 +38,16 @@
 				isLoading : false, 
 				h1class : 'color-red',
 				title : 'Now I am coming from js',
-				toggleButtonText : this.isLoading ? 'Loading, please wait...' : 'Toggle'
+				toggleButtonText : 'Toggle'
 			},
 			methods : {
 				toggleH1Color () {
 					this.isLoading = true; 
+					this.toggleButtonText = 'Loading, please wait...'; 
 					setTimeout(() => {
 						this.h1class = this.h1class === 'color-red' ? 'color-blue' : 'color-red'; 
 						this.isLoading = false;
+						this.toggleButtonText = 'Toggle'; 
 					}, 2000);
 				}
 			}
