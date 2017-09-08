@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div id="root">
+			<ul>
+				<!-- both will work -->
+				<!-- <li v-for="name in names">{{name}}</li> -->
+				<li v-for="name in names" v-text="name"></li>
+			</ul>
+
+			<input id="input" type="text" name="" v-model="newName" v-on:keyup.enter="addName" >
+
+
+			<!-- both will work -->
+			<!-- <button @click="addName" id="button">Add Name</button> -->
+			<button v-on:click="addName" id="button">Add Name</button>
+	</div>
+
+	<script type="text/javascript" src="https://unpkg.com/vue@2.4.2/dist/vue.js"></script>
+
+	<script type="text/javascript">
+		
+		var app = new Vue({
+			el : '#root',
+			data : {
+				newName : '',
+				names : ['Joanne', 'Shannon', 'Joaquina', 'James', 'Winnona']
+			},
+			methods : {
+				addName () {
+					this.names.push(this.newName);
+					this.newName = '';
+				}
+			}
+			// previous and fatter implementation
+			// mounted() {
+			// 	document.querySelector('#button').addEventListener('click', () => {
+			// 		let name = document.querySelector('#input'); 
+
+			// 		app.names.push(name.value);
+
+			// 		name.value = '';  
+			// 	});				
+			// }
+		})
+
+	</script>
+
+</body>
+</html>

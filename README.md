@@ -34,7 +34,8 @@ Folder structure:
 └── ref
     ├── pluralsight
     │   ├── 01_data_binding
-    │   └── 03_lists
+    │   ├── 03_lists
+    │   └── 04_event_listeners
     └── todomvc
         ├── angularjs
         ├── jquery
@@ -64,12 +65,18 @@ Folder structure:
     - after extension activation, a vue icon will appear at the upper right corner
     - within devtools, a new action tab shows up: vue
     - on vuejs action tab one can have access to the whole two-way binding tree, changes are automatically reflected throughout the DOM
-  - 3. Lists (on)
+  - 3. Lists (done)
     - use of v-for
     - use of v-text 
     - difference between v-text and {{ }}
     - commit pre-mounted : how to give functionality without the property method Vue.mounted () {}
-  - 4. Event Listeners
+    - commit pos-mounted : implementation of property method triggered right after static DOM rendering
+  - 4. Event Listeners (done)
+    - [official documentation](https://vuejs.org/v2/guide/events.html)
+    - use of v-on
+    - use of @<event-name>
+    - use of v-on:keyup.enter 
+    - elimination of document.querySelector 
   - 5. Attributr and class binding
   - 6. The Need for Computed Properties
   - 7. Components 101
