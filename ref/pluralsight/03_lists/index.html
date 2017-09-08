@@ -24,16 +24,17 @@
 			el : '#root',
 			data : {
 				names : ['Joanne', 'Shannon', 'Joaquina', 'James', 'Winnona']
-			} 
+			},
+			mounted() {
+				document.querySelector('#button').addEventListener('click', () => {
+					let name = document.querySelector('#input'); 
+
+					app.names.push(name.value);
+
+					name.value = '';  
+				});				
+			}
 		})
-
-		document.querySelector('#button').addEventListener('click', () => {
-			let name = document.querySelector('#input'); 
-
-			app.names.push(name.value);
-
-			name.value = '';  
-		});
 
 	</script>
 
