@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<div id="root">
+		<h2>All Tasks</h2>
+
+		<div v-for="task in tasks">
+			<input type="checkbox" id="checkbox" v-model="task.completed">
+			<label for="checkbox">{{ task.description }}</label>
+		</div>
+
+
+
+		<h2>Incomplete Tasks</h2>
+
+		<ul>
+			<li v-for="task in incompleteTasks" v-text="task.description"></li>
+		</ul>
+
+	</div>
+
+	<script type="text/javascript" src="https://unpkg.com/vue@2.4.2/dist/vue.js"></script>
+
+	<script type="text/javascript">
+		
+		new Vue({
+			el : '#root',
+			data : {
+				tasks : [
+					{ description : 'Complete Course', completed : true }, 
+					{ description : 'Find patterns', completed : false }, 
+					{ description : 'Check out for modules', completed : false }, 
+					{ description : 'Check out auth integrations', completed : false }, 
+					{ description : 'Explore local storage and async local storage', completed : true }, 
+					{ description : 'Explore admin like and dashboard like controls', completed : false }
+				]
+			},
+			computed: {
+				incompleteTasks() {
+					return this.tasks.filter(task => !task.completed);
+				}
+			} 
+		})
+
+	</script>
+
+</body>
+</html>

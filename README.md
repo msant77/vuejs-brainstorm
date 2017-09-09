@@ -36,7 +36,8 @@ Folder structure:
     │   ├── 01_data_binding
     │   ├── 03_lists
     │   ├── 04_event_listeners
-    │   └── 05_attributr_and_class_binding
+    │   ├── 05_attributr_and_class_binding
+    │   └── 06_the_need_for_computed_properties
     └── todomvc
         ├── angularjs
         ├── jquery
@@ -78,12 +79,16 @@ Folder structure:
     - use of @[event-name]
     - use of v-on:keyup.enter 
     - elimination of document.querySelector 
-  - 5. Attributr and class binding (on)
+  - 5. Attributr and class binding (done)
     - [official documentation](https://vuejs.org/v2/guide/class-and-style.html)
     - use of :class
     - use of v-bind:[attribute]
     - the first commit introduces the limitation of using computed values at the literal Vue().data, changes won't be automatically reflected, situation is reproduced under [Issue 1](https://github.com/marcosantana77/vuejs-brainstorm/issues/1)
-  - 6. The Need for Computed Properties
+  - 6. The Need for Computed Properties (done)
+    - [official documentation](https://vuejs.org/v2/guide/computed.html)
+    - bind checkboxes to array items 
+    - how-to implement computed properties
+    - fixes issue #1, the right way of showing mutable data
   - 7. Components 101
   - 8. Nesting components
   - 9. Exercise: Modal
