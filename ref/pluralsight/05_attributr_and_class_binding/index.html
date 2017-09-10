@@ -18,7 +18,7 @@
 
 			<h1 :class="h1class">I am bount by class name</h1>
 
-			<button @click="toggleH1Color" :class="{'is-loading' : isLoading}" :disabled="isLoading" v-text="toggleButtonText"></button>
+			<button @click="toggleH1Color()" :class="{'is-loading' : isLoading}" :disabled="isLoading" v-text="title"></button>
 
 			<br><br>
 
@@ -37,22 +37,25 @@
 			data : {
 				isLoading : false, 
 				h1class : 'color-red',
-				title : 'Now I am coming from js',
-				toggleButtonText : 'Toggle'
+				title : 'Toggle', 
+				button2Title : 'Now I am coming from js'
 			},
 			methods : {
+				toggleMe() {
+					let t = 'Toggle'; 
+					this.title === t ? 'Loading, please wait...' : t;  
+				},
 				toggleH1Color () {
 					this.isLoading = true; 
-					this.toggleButtonText = 'Loading, please wait...'; 
+					toggleMe();
 					setTimeout(() => {
 						this.h1class = this.h1class === 'color-red' ? 'color-blue' : 'color-red'; 
 						this.isLoading = false;
-						this.toggleButtonText = 'Toggle'; 
+						toggleMe(); 
 					}, 2000);
 				}
 			}
 		})
-
 	</script>
 
 </body>
