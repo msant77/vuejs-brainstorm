@@ -90,6 +90,10 @@ Folder structure:
     - how-to implement computed properties
     - fixes issue #1, the right way of showing mutable data
   - 7. Components 101
+    - [official documentation](https://vuejs.org/v2/guide/components.html)
+    - uses separate file
+    - Vue.component()
+    - `<slot></slot>`
   - 8. Nesting components
   - 9. Exercise: Modal
   - 10. Exercise: Tabs
