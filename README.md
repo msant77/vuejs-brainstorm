@@ -37,7 +37,9 @@ Folder structure:
     │   ├── 03_lists
     │   ├── 04_event_listeners
     │   ├── 05_attributr_and_class_binding
-    │   └── 06_the_need_for_computed_properties
+    │   ├── 06_the_need_for_computed_properties
+    │   ├── 07_components
+    │   └── 08_nesting_components
     └── todomvc
         ├── angularjs
         ├── jquery
@@ -61,41 +63,45 @@ Folder structure:
     - v-model
     - new Vue({})
     - first load, non-minified 71k :))))
-
-  - 2. Devtools (done)
+  - 02. Devtools (done)
     - install [vue.js devtools chrome extension](https://github.com/vuejs/vue-devtools)
     - after extension activation, a vue icon will appear at the upper right corner
     - within devtools, a new action tab shows up: vue
     - on vuejs action tab one can have access to the whole two-way binding tree, changes are automatically reflected throughout the DOM
-  - 3. Lists (done)
+  - 03. Lists (done)
     - use of v-for
     - use of v-text 
     - difference between v-text and {{ }}
     - commit pre-mounted : how to give functionality without the property method Vue.mounted () {}
     - commit pos-mounted : implementation of property method triggered right after static DOM rendering
-  - 4. Event Listeners (done)
+  - 04. Event Listeners (done)
     - [official documentation](https://vuejs.org/v2/guide/events.html)
     - use of v-on
     - use of @[event-name]
     - use of v-on:keyup.enter 
     - elimination of document.querySelector 
-  - 5. Attributr and class binding (done)
+  - 05. Attributr and class binding (done)
     - [official documentation](https://vuejs.org/v2/guide/class-and-style.html)
     - use of :class
     - use of v-bind:[attribute]
     - the first commit introduces the limitation of using computed values at the literal Vue().data, changes won't be automatically reflected, situation is reproduced under [Issue 1](https://github.com/marcosantana77/vuejs-brainstorm/issues/1)
-  - 6. The Need for Computed Properties (done)
+  - 06. The Need for Computed Properties (done)
     - [official documentation](https://vuejs.org/v2/guide/computed.html)
     - bind checkboxes to array items 
     - how-to implement computed properties
     - fixes issue #1, the right way of showing mutable data
-  - 7. Components 101
+  - 07. Components 101 (done)
     - [official documentation](https://vuejs.org/v2/guide/components.html)
     - uses separate file
     - Vue.component()
     - `<slot></slot>`
-  - 8. Nesting components
-  - 9. Exercise: Modal
+  - 08. Nesting components (on)
+    - [official documentation](https://vuejs.org/v2/guide/components.html#Composing-Components)
+    - component.data() vs app.data, component.template
+    - question: how to create an independent template
+      - string interpolation makes it harder to spot typos and bugs. Any suggestions ? 
+      - component division by folder looks a bit better for large enterprise apps. Care to point disagreements and why ? 
+  - 09. Exercise: Modal
   - 10. Exercise: Tabs
   - 11. Component Communication Example #1: Custom Events
   - 12. Component Communication Example #2: Event Dispatcher
@@ -129,3 +135,6 @@ Here is some very intersting reading on a few pattern aspects, good to keep in m
 
 ### YouTube
   - [Crash Course by Brad Traversy - 60 minutes](https://www.youtube.com/watch?v=z6hQqgvGI4Y)
+
+### Awesome Vue
+  - [A curated list of awesome things related to Vue.js](https://github.com/vuejs/awesome-vue)
