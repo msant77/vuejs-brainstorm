@@ -41,17 +41,16 @@
 				button2Title : 'Now I am coming from js'
 			},
 			methods : {
-				toggleMe() {
+				toggle() {
 					let t = 'Toggle'; 
-					this.title === t ? 'Loading, please wait...' : t;  
+					this.loading = !this.loading; 
+					this.title = this.title === t ? 'Loading, please wait...' : t;  
 				},
 				toggleH1Color () {
-					this.isLoading = true; 
-					toggleMe();
+					this.toggle();
 					setTimeout(() => {
 						this.h1class = this.h1class === 'color-red' ? 'color-blue' : 'color-red'; 
-						this.isLoading = false;
-						toggleMe(); 
+						this.toggle(); 
 					}, 2000);
 				}
 			}
